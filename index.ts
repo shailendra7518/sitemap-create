@@ -1,10 +1,7 @@
 import sanityClient from 'picosanity'
 import fs from 'fs'
 import path from 'path'
-import { exec } from 'child_process'
-import util from 'util'
-
-const execPromise = util.promisify(exec)
+import simpleGit from 'simple-git'
 
 interface Url {
   url: string
@@ -35,7 +32,6 @@ const staticUrls: Url[] = [
 ]
 
 const repositoryUrl = "https://github.com/shailendra7518/sitemap-create.git"
-
 
 const getDynamicUrls = async (): Promise<Url[]> => {
   const queries = [
@@ -111,6 +107,41 @@ const generateSitemapContent = async (): Promise<string> => {
   return sitemapContent
 };
 
+const pushToGithub = async () => {
+  const git = simpleGit();
+
+  try {
+    // Initialize a new Git repository if it doesn't exist
+    if (!await git.checkIsRepo()) {
+      await git.init();
+      await git.addRemote('origin', repositoryUrl);
+    }
+
+    console.log('Fetching latest changes from remote...');
+    await git.fetch('origin', 'main');
+
+    console.log('Adding changes to the staging area...');
+    await git.add('.');
+
+    console.log('Committing changes...');
+    await git.commit('Update sitemap.xml');
+
+    console.log('Checking out main branch...');
+    await git.checkout('main');
+
+    console.log('Merging latest changes from origin/main...');
+    await git.pull('origin', 'main');
+
+ 
+    console.log('Pushing changes to the remote repository...');
+    await git.push('origin', 'main');
+
+    console.log('Changes pushed to the repository successfully.');
+  } catch (err) {
+    console.error('Error pushing to repository:', err);
+  }
+};
+
 ;(async () => {
   try {
     const sitemapContent = await generateSitemapContent()
@@ -118,17 +149,9 @@ const generateSitemapContent = async (): Promise<string> => {
     fs.writeFileSync(filePath, sitemapContent, 'utf8')
     console.log('sitemap.xml generated and saved to public folder')
 
-    // Add, commit, and push changes
-    await execPromise('git add public/sitemap.xml')
-    await execPromise('git commit -m "Update sitemap.xml"')
-
-    // Set remote repository URL temporarily
-    await execPromise(`git remote set-url origin ${repositoryUrl}`)
-    await execPromise('git push origin main') // Adjust branch name if needed
-
-    console.log('Changes pushed to GitHub repository')
+    // Push changes to GitHub
+    await pushToGithub();
   } catch (error) {
     console.error('Error:', error)
   }
 })()
-
