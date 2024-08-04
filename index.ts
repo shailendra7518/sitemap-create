@@ -44,7 +44,7 @@ const getDynamicUrls = async (): Promise<Url[]> => {
 
   const [blogs, projects, jobOpenings, consultants, services] =
     await Promise.all(queries.map(query => client.fetch(query)))
-  console.log(blogs)
+  
   const dynamicUrls: Url[] = [
     ...blogs.map((blog: { slug: { current: string }; updatedAt: string }) => ({
       url: `/blogs/${blog.slug.current}`,
