@@ -1,0 +1,5 @@
+@import '../mixins/mixins';
+
+.blogs {
+  @include blogCard;
+}

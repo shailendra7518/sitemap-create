@@ -1,0 +1,361 @@
+.job-details-main-container {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center; }
+  .job-details-main-container .container {
+    max-width: 900px;
+    margin-top: 0; }
+    @media only screen and (max-width: 900px) {
+      .job-details-main-container .container {
+        margin: 0 30px; } }
+  .job-details-main-container h2 {
+    color: #1CBBDA;
+    font-size: 1.25rem; }
+  .job-details-main-container .inner-big-side p,
+  .job-details-main-container .inner-big-side li {
+    font-size: 15px; }
+  @media only screen and (max-width: 767px) {
+    .job-details-main-container .inner-big-side {
+      width: 100%; } }
+  .job-details-main-container .inner-small-side li {
+    font-size: 15px; }
+  @media only screen and (max-width: 767px) {
+    .job-details-main-container .inner-small-side {
+      width: 100%; } }
+  .job-details-main-container .job-info-title-content {
+    width: fit-content; }
+    .job-details-main-container .job-info-title-content .job-title-image {
+      max-width: 50px; }
+      @media only screen and (max-width: 720px) {
+        .job-details-main-container .job-info-title-content .job-title-image {
+          max-width: 40px; } }
+    .job-details-main-container .job-info-title-content .job-info-title-sub-content .job-info-title-sub-main-content {
+      gap: 4px;
+      align-items: center; }
+      @media only screen and (max-width: 337px) {
+        .job-details-main-container .job-info-title-content .job-info-title-sub-content .job-info-title-sub-main-content {
+          font-size: smaller; } }
+      @media only screen and (max-width: 287px) {
+        .job-details-main-container .job-info-title-content .job-info-title-sub-content .job-info-title-sub-main-content {
+          font-size: 10px; } }
+    @media only screen and (max-width: 576px) {
+      .job-details-main-container .job-info-title-content .job-info-title-sub-content {
+        width: 100%;
+        margin: auto;
+        font-size: small; } }
+    @media only screen and (max-width: 576px) {
+      .job-details-main-container .job-info-title-content {
+        width: 100%; } }
+  .job-details-main-container .job-info-container {
+    margin-top: 40px;
+    display: block; }
+    @media only screen and (max-width: 972px) {
+      .job-details-main-container .job-info-container h2 {
+        font-size: large; }
+      .job-details-main-container .job-info-container p,
+      .job-details-main-container .job-info-container ul {
+        font-size: 15px; } }
+    @media only screen and (max-width: 576px) {
+      .job-details-main-container .job-info-container h2 {
+        font-size: 17px; }
+      .job-details-main-container .job-info-container p,
+      .job-details-main-container .job-info-container ul {
+        font-size: 13px; } }
+  @media only screen and (max-width: 576px) {
+    .job-details-main-container .job-info-application-container {
+      gap: 0px;
+      flex-direction: column; }
+      .job-details-main-container .job-info-application-container p,
+      .job-details-main-container .job-info-application-container ul {
+        font-size: 15px; } }
+  @media only screen and (max-width: 427px) {
+    .job-details-main-container .job-info-application-container p,
+    .job-details-main-container .job-info-application-container ul {
+      font-size: 13px; } }
+
+@media only screen and (max-width: 376px) {
+  .blog__title {
+    text-align: center; } }
+
+.opening-job-position {
+  margin-top: 180px; }
+  .opening-job-position .hiring-content .hiring-title {
+    font-size: 56px;
+    font-family: "Montserrat", sans-serif;
+    color: #E4E8F0;
+    font-weight: 500; }
+    @media only screen and (max-width: 576px) {
+      .opening-job-position .hiring-content .hiring-title {
+        font-size: 45px; } }
+  .opening-job-position .hiring-content .hiring-details {
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #ABABAB;
+    font-weight: 400; }
+    @media only screen and (max-width: 992px) {
+      .opening-job-position .hiring-content .hiring-details {
+        font-size: 20px; } }
+    @media only screen and (max-width: 576px) {
+      .opening-job-position .hiring-content .hiring-details {
+        font-size: 18px; } }
+  .opening-job-position .col-5 {
+    background-color: #18191B; }
+  .opening-job-position .hiring-card .position-opening .job-position-title {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    color: #1CBBDA;
+    font-weight: 500; }
+    @media only screen and (max-width: 1200px) {
+      .opening-job-position .hiring-card .position-opening .job-position-title {
+        font-size: 20px; } }
+    @media only screen and (max-width: 576px) {
+      .opening-job-position .hiring-card .position-opening .job-position-title {
+        font-size: 18px; } }
+  .opening-job-position .hiring-card .position-opening .job-position-details {
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #878787;
+    font-weight: 400; }
+    @media only screen and (max-width: 1200px) {
+      .opening-job-position .hiring-card .position-opening .job-position-details {
+        font-size: 16px; } }
+  .opening-job-position .hiring-card .position-opening .job-positions {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    color: #1CBBDA;
+    font-weight: 600;
+    margin: auto;
+    text-align: center; }
+    @media only screen and (max-width: 1200px) {
+      .opening-job-position .hiring-card .position-opening .job-positions {
+        font-size: 18px; } }
+  @media only screen and (max-width: 576px) {
+    .opening-job-position .hiring-card {
+      width: 280px; } }
+
+.why-us-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  color: #1CBBDA;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 36px; }
+  .why-us-title a {
+    color: #1CBBDA; }
+
+@media only screen and (max-width: 1200px) {
+  .job-position-title {
+    font-size: 20px !important; }
+  .job-position-details {
+    font-size: 16px !important; } }
+
+@media only screen and (max-width: 992px) {
+  .job-position-title {
+    font-size: 19px !important; } }
+
+.perks-of-joining {
+  margin-top: 120px; }
+  .perks-of-joining .joining-heading {
+    margin-bottom: 130px; }
+    @media only screen and (max-width: 576px) {
+      .perks-of-joining .joining-heading {
+        margin-bottom: 90px; } }
+  @media only screen and (max-width: 576px) {
+    .perks-of-joining {
+      margin-top: 50px; } }
+  .perks-of-joining .perks-of-joining-one {
+    gap: 50px 220px;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .perks-of-joining .perks-of-joining-one .perks {
+      padding: 46px 40px; }
+      @media only screen and (max-width: 576px) {
+        .perks-of-joining .perks-of-joining-one .perks .perks-inner .perks-icon img {
+          width: 45px;
+          height: 45px; } }
+      .perks-of-joining .perks-of-joining-one .perks .perks-inner .perks-icon .perks-title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 24px;
+        color: #1CBBDA;
+        text-transform: capitalize;
+        font-weight: 500;
+        line-height: 32px;
+        padding: 36px; }
+        @media only screen and (max-width: 576px) {
+          .perks-of-joining .perks-of-joining-one .perks .perks-inner .perks-icon .perks-title {
+            font-size: 16px;
+            line-height: 1.5; } }
+      .perks-of-joining .perks-of-joining-one .perks:nth-child(1) {
+        background-image: url("/images/joining-bg-card-1.png");
+        transform: rotate(28deg);
+        background-repeat: no-repeat;
+        background-position: top; }
+        .perks-of-joining .perks-of-joining-one .perks:nth-child(1) .perks-inner {
+          transform: rotate(-15deg); }
+        @media only screen and (max-width: 576px) {
+          .perks-of-joining .perks-of-joining-one .perks:nth-child(1) {
+            background-size: 180px 180px; } }
+      .perks-of-joining .perks-of-joining-one .perks:nth-child(2) {
+        background-image: url("/images/joining-bg-card-2.png");
+        transform: rotate(8deg);
+        background-repeat: no-repeat;
+        background-position: top; }
+        .perks-of-joining .perks-of-joining-one .perks:nth-child(2) .perks-inner {
+          transform: rotate(12deg); }
+        @media only screen and (max-width: 576px) {
+          .perks-of-joining .perks-of-joining-one .perks:nth-child(2) {
+            background-size: 180px 180px; } }
+      .perks-of-joining .perks-of-joining-one .perks:nth-child(3) {
+        background-image: url("/images/joining-bg-card-1.png");
+        transform: rotate(28deg);
+        background-repeat: no-repeat;
+        background-position: top; }
+        .perks-of-joining .perks-of-joining-one .perks:nth-child(3) .perks-inner {
+          transform: rotate(-15deg); }
+        @media only screen and (max-width: 576px) {
+          .perks-of-joining .perks-of-joining-one .perks:nth-child(3) {
+            background-size: 180px 180px; } }
+      .perks-of-joining .perks-of-joining-one .perks:nth-child(4) {
+        background-image: url("/images/joining-bg-card-2.png");
+        transform: rotate(8deg);
+        background-repeat: no-repeat;
+        background-position: top; }
+        .perks-of-joining .perks-of-joining-one .perks:nth-child(4) .perks-inner {
+          transform: rotate(12deg); }
+        @media only screen and (max-width: 576px) {
+          .perks-of-joining .perks-of-joining-one .perks:nth-child(4) {
+            background-size: 180px 180px; } }
+      .perks-of-joining .perks-of-joining-one .perks:nth-child(5) {
+        background-image: url("/images/joining-bg-card-1.png");
+        transform: rotate(28deg);
+        background-repeat: no-repeat;
+        background-position: top; }
+        .perks-of-joining .perks-of-joining-one .perks:nth-child(5) .perks-inner {
+          transform: rotate(-15deg); }
+        @media only screen and (max-width: 576px) {
+          .perks-of-joining .perks-of-joining-one .perks:nth-child(5) {
+            background-size: 180px 180px; } }
+      @media only screen and (max-width: 576px) {
+        .perks-of-joining .perks-of-joining-one .perks {
+          padding: 40px 36px; } }
+    .perks-of-joining .perks-of-joining-one .perk-image {
+      transform: scale(0.8); }
+
+.our-team {
+  margin-top: 60px; }
+  .our-team .team-head {
+    margin-top: 120px; }
+    .our-team .team-head .team-head-name {
+      font-size: 28px;
+      font-family: "Montserrat", sans-serif;
+      color: #1CBBDA;
+      font-weight: 500; }
+      @media only screen and (max-width: 576px) {
+        .our-team .team-head .team-head-name {
+          font-size: 24px; } }
+    .our-team .team-head .team-head-position {
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+      color: #707070;
+      font-weight: 400; }
+      @media only screen and (max-width: 576px) {
+        .our-team .team-head .team-head-position {
+          font-size: 16px; } }
+    .our-team .team-head .team-head-image img {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      object-fit: cover; }
+      @media only screen and (max-width: 768px) {
+        .our-team .team-head .team-head-image img {
+          width: 250px;
+          height: 250px; } }
+      @media only screen and (max-width: 576px) {
+        .our-team .team-head .team-head-image img {
+          width: 155px;
+          height: 155px; } }
+    .our-team .team-head .team-head-image::after {
+      content: "";
+      position: absolute;
+      background-color: #313131;
+      opacity: 0.5;
+      padding: 50%;
+      z-index: -1;
+      border-radius: 5%;
+      top: -28px;
+      left: 23px; }
+    .our-team .team-head .team-head-image:after {
+      content: "";
+      position: absolute;
+      background-color: #313131;
+      opacity: 0.5;
+      padding: 64px;
+      top: -20px;
+      left: 38%; }
+  .our-team .team-member-title {
+    margin-top: 60px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: #707070;
+    font-weight: 500; }
+  .our-team .slider-container {
+    margin: 0 20px; }
+    .our-team .slider-container .team-slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1.5rem; }
+  .our-team .slick-slider {
+    margin-top: 7rem; }
+    @media (max-width: 992px) {
+      .our-team .slick-slider {
+        margin-top: 6rem; } }
+    @media (max-width: 576px) {
+      .our-team .slick-slider {
+        margin-top: 4rem; } }
+    .our-team .slick-slider .slick-track .slick-slide {
+      transition: all 0.5s;
+      filter: brightness(0.5);
+      position: relative; }
+      .our-team .slick-slider .slick-track .slick-slide .member-details {
+        display: inline-block;
+        width: 100%;
+        height: min-content;
+        min-height: 100%;
+        background-color: #18191B;
+        padding: 30px 20px; }
+        .our-team .slick-slider .slick-track .slick-slide .member-details .team-member-name {
+          font-size: 20px;
+          font-family: "Montserrat", sans-serif;
+          color: #1CBBDA;
+          font-weight: 500;
+          line-height: 20px; }
+        .our-team .slick-slider .slick-track .slick-slide .member-details .team-member-position {
+          font-size: 12px;
+          font-family: "Poppins", sans-serif;
+          color: #ABABAB;
+          font-weight: 300;
+          line-height: 10px; }
+        .our-team .slick-slider .slick-track .slick-slide .member-details .team-member-details {
+          font-size: 13px;
+          font-family: "Poppins", sans-serif;
+          color: #707070;
+          font-weight: 400;
+          line-height: 20px; }
+      .our-team .slick-slider .slick-track .slick-slide .member-img {
+        border-radius: 50%;
+        z-index: 1;
+        width: 100%;
+        height: 120px;
+        max-width: 120px;
+        object-fit: fill;
+        margin-bottom: -60px; }
+    .our-team .slick-slider .slick-track .slick-slide.slick-current {
+      transition: all 0.5s;
+      filter: brightness(1);
+      transition: all 0.5s; }
+      .our-team .slick-slider .slick-track .slick-slide.slick-current .member-img {
+        transition: all 0.5;
+        border: 5px solid #1CBBDA; }

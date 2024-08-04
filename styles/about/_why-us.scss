@@ -1,0 +1,126 @@
+.why-us {
+  margin: 5rem 0;
+  .why-us-title,.why-us-title-right{
+    font-family: $main_text;
+    font-size: 24px;
+    color: $theme;
+    text-transform: capitalize;
+    font-weight: 500;
+    line-height: 36px;
+    transition: all 0.2s ease-in;
+    a {
+      color: $theme;
+    }
+    @media (max-width: 768px) {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 26px;
+    }
+  }
+  .why-us-widget {
+    transition: all 0.3s ease;
+
+    .why-us-icon {
+      border: 2px solid $theme;
+      transition: all 0.2s ease-in;
+      @media screen and (max-width: 576px) {
+        img {
+          width: 50px;
+          height: 45px;
+        }
+      }
+    }
+
+    .why-us-title-box {
+      &:before {
+        content: "";
+        padding: 0 24%;
+        position: absolute;
+        right: 43%;
+        border-top: 1.5px solid $theme;
+      }
+      &:after {
+        content: "";
+        padding: 0 24%;
+        position: absolute;
+        right: 36%;
+        border-top: 1.5px solid $theme;
+        transition: all 0.2s ease-in;
+      }
+    }
+
+    .why-us-title-box-right {
+      &:before {
+        content: "";
+        padding: 0 55%;
+        position: absolute;
+        left: -20px;
+        border-top: 1.5px solid $theme;
+        transition: all 0.2s ease-in;
+      }
+      &:after {
+        content: "";
+        padding: 0 55%;
+        position: absolute;
+        left: -60px;
+        border-top: 1.5px solid $theme;
+        transition: all 0.2s ease-in;
+      }
+    }
+
+    &:hover {
+      .why-us-title-box {
+        &:after {
+          right: 43%;
+        }
+      }
+      .why-us-title-box-right {
+        &:after {
+          left: -20px;
+        }
+      }
+      .why-us-title {
+        transform: translateX(20px);
+      }
+      .why-us-title-right {
+        transform: translateX(-20px);
+      }
+      .why-us-icon {
+        transform: translateY(25px);
+      }
+    }
+
+    .why-us-heading {
+      img {
+        @media only screen and (max-width: 576px) {
+          height: 84px;
+          width: 54px;
+        }
+      }
+    }
+  }
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+  }
+  
+}
+
+.mw-700 {
+  max-width: 700px;
+}
+
+.process-title {
+  border-right: 1px solid $theme;
+  @media only screen and (max-width: 991px) {
+    border-right: none;
+  }
+}
+
+.process-details {
+  font-size: 16px;
+  font-family: $sub_text;
+  color: $dark_grey;
+  @media only screen and (max-width: 991px) {
+    font-size: 14px;
+  }  
+}

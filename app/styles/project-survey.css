@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap";
+.survey-banner-sub-title {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  color: #1CBBDA;
+  font-weight: 500;
+  cursor: pointer; }
+
+.project-survey-widget iframe {
+  height: 381px !important; }
+
+.project-survey-block .project-survey-block-title {
+  margin: 55px 0 20px 0; }
+  .project-survey-block .project-survey-block-title h2 {
+    font-size: 36px;
+    font-family: "Poppins", sans-serif;
+    color: #1CBBDA;
+    font-weight: 500; }
+  .project-survey-block .project-survey-block-title .pagination-box {
+    font-size: 32px;
+    color: #707070;
+    align-items: center; }
+    .project-survey-block .project-survey-block-title .pagination-box p {
+      margin: 0; }
+    .project-survey-block .project-survey-block-title .pagination-box svg {
+      font-size: 38px;
+      cursor: pointer; }
+    .project-survey-block .project-survey-block-title .pagination-box .page-number {
+      color: #1CBBDA; }
+  @media only screen and (max-width: 576px) {
+    .project-survey-block .project-survey-block-title {
+      margin: 70px 0 20px; } }
+
+.project-survey-block .survey-icon-box .survey-icon-box-inner {
+  background-color: #18191B; }
+  @media only screen and (max-width: 576px) {
+    .project-survey-block .survey-icon-box .survey-icon-box-inner img {
+      width: 50px;
+      height: 50px; } }
+  .project-survey-block .survey-icon-box .survey-icon-box-inner .survey-icon-name {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #1CBBDA; }
+    @media only screen and (max-width: 576px) {
+      .project-survey-block .survey-icon-box .survey-icon-box-inner .survey-icon-name {
+        font-size: 16px;
+        margin: 0 4px; } }
+
+.project-survey-block .survey-icon-box .bottom-animated-line {
+  width: 100%;
+  border-top: 5px solid #1CBBDA;
+  transition: all 0.2s ease; }
+
+.project-survey-block .survey-icon-box .animated-line {
+  width: 0%;
+  border-top: 5px solid #1CBBDA;
+  transition: width 0.4s ease; }
+
+.project-survey-block .survey-icon-box:hover .animated-line {
+  width: 100%; }
+
+.project-survey-block .next-btn {
+  color: #1CBBDA;
+  font-size: 28px; }
+  .project-survey-block .next-btn a {
+    color: #1CBBDA; }
+
+.project-survey-block .survey-form-text h2 {
+  font-size: 48px;
+  color: #E4E8F0; }
+  @media (max-width: 1140px) {
+    .project-survey-block .survey-form-text h2 {
+      font-size: 36px; } }
+
+.project-survey-block .survey-form-text p {
+  font-size: 18px;
+  color: #fff; }
+
+.project-survey-block .survey-form-text a {
+  text-decoration: none;
+  color: #1CBBDA; }
+
+.project-survey-block .next-q-button button {
+  all: unset;
+  color: #1CBBDA;
+  font-size: 28px;
+  transition: all 0.5s;
+  cursor: pointer; }
+  .project-survey-block .next-q-button button:disabled {
+    color: #1cbbda82;
+    transition: all 0.5s; }

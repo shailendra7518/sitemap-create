@@ -1,0 +1,188 @@
+.testimonials {
+  margin: 7rem 0;
+
+  .slick-slider {
+    .slick-initialized > row* {
+      width: 50%;
+    }
+  }
+  .client-say {
+    border-bottom-width: 70%;
+    border-bottom: 1px solid $theme;
+
+    .testimonial-details {
+      .inverted-comma {
+        margin-left: -60px;
+      }
+      .testimonial-image img {
+        width: 100%;
+        max-width: 140px;
+        height: fit-content;
+      }
+      .testimonial-client-block {
+        .testimonial-title {
+          color: $light_grey;
+          font-size: 24px;
+          font-family: $main_text;
+          @media only screen and (max-width: 1024px) {
+            font-size: 20px;
+          }
+          @media only screen and (max-width: 576px) {
+            font-size: 17px;
+          }
+        }
+        @media only screen and (max-width: 576px) {
+          position: absolute;
+          top: 8%;
+          left: 50%;
+        }
+      }
+      .testimonial-review {
+        font-size: 20px;
+        font-family: $sub_text;
+        color: $dark_grey-3;
+        line-height: 30px;
+        @media only screen and (max-width: 1024px) {
+          font-size: 16px;
+          line-height: 24px;
+          margin-top: 10px;
+        }
+        @media only screen and (max-width: 576px) {
+          font-size: 15px;
+          line-height: 1.5;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        position: relative;
+      }
+    }
+
+    .slick-arrow.slick-next {
+      position: absolute;
+      top: 97%;
+      transform: scale(2);
+      @media only screen and (max-width: 768px) {
+        top: 97%;
+        right: -2px;
+      }
+    }
+  }
+  .rating-content {
+    .rating-text {
+      p,
+      a {
+        color: $dark_grey-3;
+        font-size: 20px;
+        font-family: $sub_text;
+        @media only screen and (max-width: 576px) {
+          font-size: 18px;
+        }
+      }
+      a.reviews {
+        color: $theme;
+      }
+    }
+    .clutch-review {
+      p {
+        color: $dark_grey;
+        font-size: 28px;
+        font-family: $sub_text;
+      }
+      .clutch-logo img {
+        width: 150px;
+        @media only screen and (max-width: 576px) {
+          margin-left: 10px;
+          width: 86px;
+        }
+      }
+      .clutch-logo a {
+        color: $theme;
+        font-size: 24px;
+        font-family: $sub_text;
+      }
+      @media only screen and (max-width: 576px) {
+        display: flex;
+      }
+    }
+    .rating {
+      color: $theme;
+      margin-left: 1rem;
+      font-size: 28px;
+      font-family: $main_text;
+    }
+  }
+  @media (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+  @media only screen and (max-width: 576px) {
+    margin: 5rem 0;
+  }
+}
+
+.clients {
+  margin: 5rem 0;
+  padding: 4rem 0;
+  margin-top: 40px;
+  background-color: $light_bg;
+  pointer-events: none;
+  .slick-slider {
+    .slick-slide {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @media only screen and (max-width: 576px) {
+      margin: 0 2.5rem;
+      padding: 2rem 0;
+    }
+  }
+
+  .heading {
+    @media only screen and (max-width: 576px) {
+      padding-top: 1rem;
+      h1 {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .client-icons {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    justify-items: center;
+    justify-content: center;
+    grid-row-gap: 60px;
+    .client-icon {
+      transform: scale(0.8);
+    }
+    @media (max-width: 768px) {
+      gap: 5rem;
+      grid-row-gap: 30px;
+    }
+    @media only screen and (max-width: 576px) {
+      flex-wrap: nowrap;
+      overflow-x: scroll;
+    }
+  }
+
+  .client-slider-item {
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:focus-visible {
+      outline: none;
+    }
+    .client-image {
+      transform: scale(0.9);
+    }
+  }
+
+  @media only screen and (max-width: 576px) {
+    pointer-events: auto;
+    padding: 0;
+    margin-bottom: 3rem;
+  }
+}

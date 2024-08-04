@@ -1,0 +1,181 @@
+@import "./helpers/colors";
+@import "./helpers/font";
+@import "./mixins/mixins";
+
+.project-page {
+  .project-carousel {
+    padding: 0 2rem;
+    margin-top: 10rem;
+  }
+
+  .slick-slide {
+    padding: 0 2rem;
+    transform: scale(0.8);
+
+    &.slick-current {
+      transition-duration: 0.3s;
+      transition-timing-function: linear;
+      transform: scale(1.1);
+    }
+  }
+
+  .project-showcase {
+    @include projectsCard;
+
+    @media only screen and (max-width: 1199px) {
+
+      .projects .project-card__img,
+      .project-card-box .project-card__img {
+        max-height: 160px !important;
+      }
+    }
+
+    @media only screen and (max-width: 991px) {
+
+      .projects .project-card__img,
+      .project-card-box .project-card__img {
+        max-height: 185px !important;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      .projects .project-card__img,
+      .project-card-box .project-card__img {
+        height: 100% !important;
+        max-height: 500px !important;
+      }
+    }
+  }
+}
+
+.about-project {
+  .about-project-heading {
+    font-size: 36px;
+    font-family: $main_text;
+    color: $theme;
+    font-weight: 500;
+  }
+
+  .content-details {
+    font-size: 20px;
+    font-family: $sub_text;
+    color: #ababab;
+    font-weight: 300;
+    line-height: 36px;
+    text-justify: inter-word;
+
+    @media only screen and (max-width: 1200px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 786px) {
+      font-size: 14px;
+    }
+
+    @media only screen and (max-width: 576px) {
+      font-size: 12px;
+    }
+  }
+}
+
+.project-features {
+  background-color: $dark_bg;
+
+  .detail-list-group {
+    list-style: square outside url("/images/icons/square-bullet.svg");
+
+    .detail-list {
+      @include details-list;
+
+      .list-number {
+        font-size: 20px;
+        color: $theme;
+        font-weight: 500;
+        border: 1px solid $theme;
+      }
+
+      .list-content {
+        top: -8px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      list-style: square outside url("/images/icons/square-bullet-small.svg");
+    }
+  }
+
+  .project-feature-list {
+    column-count: 2;
+
+    .feature-list {
+      margin-right: 20%;
+
+      @media (max-width: 991px) {
+        margin-right: 10%;
+      }
+
+      @media (max-width: 786px) {
+        margin-right: 0;
+        font-size: 1.1rem;
+      }
+
+      @media only screen and (max-width: 576px) {
+        margin-right: 0;
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 786px) {
+      column-count: 1;
+    }
+  }
+}
+
+.text-theme {
+  color: $theme;
+}
+
+.project-detail-banner {
+  margin-top: 12rem;
+
+  .project-detail-banner-inner {
+    @media only screen and (min-width: 991px) {
+      margin-top: -10%;
+    }
+  }
+
+  .banner-text {
+    .banner-title {
+      @media only screen and (max-width: 576px) {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+    }
+
+    .banner-detail {
+      @media only screen and (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    margin-top: 30%;
+  }
+
+  @media only screen and (max-width: 576px) {
+    margin-bottom: -3.3rem;
+  }
+}
+
+.modal-content {
+  background: linear-gradient(360deg, $dark_bg 73%, transparent 32%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+
+  @media only screen and (min-width: 1200px) {
+    background: linear-gradient(-90deg, $dark_bg 73%, transparent 32%);
+    clip-path: polygon(0 0, 100% 7%, 100% 91%, 0% 100%);
+  }
+}

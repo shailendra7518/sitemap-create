@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="right-arrow-border" transform="translate(-2.999 -2.969)">
+    <path id="Path_21100" data-name="Path 21100" d="M39,21A18,18,0,1,1,21,3,18,18,0,0,1,39,21Z" transform="translate(0.999 0.969)"/>
+    <path id="Path_21100_-_Outline" data-name="Path 21100 - Outline" d="M21,2a19,19,0,0,1,7.4,36.506A19,19,0,0,1,13.6,3.494,18.882,18.882,0,0,1,21,2Zm0,36A17,17,0,1,0,4,21,17.019,17.019,0,0,0,21,38Z" transform="translate(0.999 0.969)" fill="#1cbbda"/>
+    <path id="Path_21101" data-name="Path 21101" d="M18,27.4a1,1,0,0,1-.707-1.707L23.786,19.2l-6.493-6.493a1,1,0,0,1,1.414-1.414l7.2,7.2a1,1,0,0,1,0,1.414l-7.2,7.2A1,1,0,0,1,18,27.4Z" transform="translate(0.999 2.969)" fill="#1cbbda"/>
+  </g>
+</svg>

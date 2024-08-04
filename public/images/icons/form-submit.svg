@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="74.664" height="41.283" viewBox="0 0 74.664 41.283">
+  <g id="form-submit" transform="translate(-683.87 -1537.029)">
+    <path id="Rectangle_10910" data-name="Rectangle 10910" d="M5,2A3,3,0,0,0,2,5V36.283a3,3,0,0,0,3,3H54.278a3,3,0,0,0,3-3V5a3,3,0,0,0-3-3H5M5,0H54.278a5,5,0,0,1,5,5V36.283a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V5A5,5,0,0,1,5,0Z" transform="translate(683.87 1537.029)" fill="#1cbbda"/>
+    <g id="Group_44980" data-name="Group 44980" transform="translate(692.791 1544.844)">
+      <g id="Group_44978" data-name="Group 44978">
+        <path id="Rectangle_10911" data-name="Rectangle 10911" d="M2,2V8.927H12.569V2H2M2,0H12.569a2,2,0,0,1,2,2V8.927a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(22.924)" fill="#1cbbda"/>
+        <path id="Rectangle_10913" data-name="Rectangle 10913" d="M2,2V5.285H12.569V2H2M1,0H13.569a1,1,0,0,1,1,1V6.285a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(0 2.428)" fill="#1cbbda"/>
+      </g>
+      <g id="Group_44979" data-name="Group 44979" transform="translate(0 15.783)">
+        <path id="Rectangle_10912" data-name="Rectangle 10912" d="M2,2V8.927H12.569V2H2M2,0H12.569a2,2,0,0,1,2,2V8.927a2,2,0,0,1-2,2H2a2,2,0,0,1-2-2V2A2,2,0,0,1,2,0Z" transform="translate(22.924)" fill="#1cbbda"/>
+        <path id="Rectangle_10914" data-name="Rectangle 10914" d="M2,2V5.285H12.569V2H2M1,0H13.569a1,1,0,0,1,1,1V6.285a1,1,0,0,1-1,1H1a1,1,0,0,1-1-1V1A1,1,0,0,1,1,0Z" transform="translate(0 2.428)" fill="#1cbbda"/>
+      </g>
+    </g>
+    <path id="Icon_material-edit" data-name="Icon material-edit" d="M0,20.1v5.288H5.288l15.6-15.6L15.6,4.5ZM24.973,5.7a1.4,1.4,0,0,0,0-1.988l-3.3-3.3a1.4,1.4,0,0,0-1.988,0L17.1,2.993l5.288,5.288L24.973,5.7Z" transform="translate(733.148 1537.029)" fill="#1cbbda"/>
+  </g>
+</svg>

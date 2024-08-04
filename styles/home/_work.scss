@@ -1,0 +1,9 @@
+@import '../mixins/mixins';
+
+.how-we-work {
+  background-color: $light_bg;
+  transition: all 0.5s ease;
+  .process {
+    @include processContent;
+  }
+}

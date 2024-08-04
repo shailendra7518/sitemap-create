@@ -1,0 +1,136 @@
+.web-technologies {
+  margin-top: 90px;
+  .web-technologies-heading {
+    margin-bottom: 50px;
+    .heading-sub-title {
+      font-size: 20px;
+      font-family: $sub_text;
+      color: $light_grey;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  .technologies-icons {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    .spinner {
+      width: 6em;
+      height: 6em;
+      position: relative;
+      .inner-spin {
+        width: 100%;
+        height: 100%;
+        border: 3px solid $theme;
+        border-top: 3px dashed $theme;
+        border-left: 3px dashed $theme;
+        border-radius: 50%;
+        transition: transform 1s;
+        transform: translateZ(0);
+      }
+      .level {
+        transform: translateZ(0) rotate(45deg);
+      }
+      .tech-icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        .inner-spin {
+          transform: rotate(180deg);
+        }
+        .level {
+          transform: rotate(225deg);
+        }
+      }
+      @media only screen and (max-width: 1000px) {
+        width: 6em;
+        height: 6em;
+      }
+      @media only screen and (max-width: 576px) {
+        width: 5em;
+        height: 5em;
+      }
+    }
+
+    .technology-icon-anim {
+      transition: all 0.5s ease-in-out;
+      opacity: 1;
+    }
+
+    .dull {
+      transition: all 0.5s ease-in-out;
+      .spinner {
+        .inner-spin {
+          transform: rotate(180deg);
+        }
+        .level {
+          transform: rotate(225deg);
+        }
+        @media only screen and (max-width: 576px) {
+          width: 5em;
+          height: 5em;
+        }
+      }
+      opacity: 0.5;
+    }
+
+    @media only screen and (max-width: 1000px) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+    @media only screen and (max-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .custom-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #3a4652;
+    ul {
+      padding-left: 0;
+      display: flex;
+      list-style: none;
+      gap: 20px;
+      margin-bottom: 0;
+      li {
+        font-size: 1.4rem;
+        cursor: pointer;
+        font-family: $main_text;
+        padding: 1rem 2rem;
+        color: $light_grey;
+        @media only screen and (max-width: 576px) {
+          padding: 1rem 1rem;
+          font-size: 1rem;
+        }
+      }
+      li.active {
+        color: $theme;
+      }
+      @media only screen and (max-width: 576px) {
+        gap: 0;
+      }
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 404px) {
+  .custom-tabs {
+    ul {
+      gap: 0;
+      li {
+        font-size: small;
+        padding: 0.5rem 0.5rem;
+      }
+    }
+  }
+}

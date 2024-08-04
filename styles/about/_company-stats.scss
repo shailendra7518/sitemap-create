@@ -1,0 +1,76 @@
+.company-stats {
+  background-color: $light_bg;
+  font-family: "Montserrat", sans-serif;
+  .company-stats-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+    text-align: center;
+    .company-stats-header-heading {
+      color: #fff;
+      font-size: 1.25rem;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 14px;
+      }
+    }
+    .company-stats-header-title {
+      color: $theme;
+      font-size: 32px;
+      padding-top: 40px;
+      @media only screen and (max-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    .company-stats-header-subtitle {
+      font-family: "Poppins", sans-serif;
+      color: $light_grey;
+      font-size: 20px;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 14px;
+      }
+    }
+  }
+  .company-stats-inner {
+    border-right: 0.5px solid $dark_bg;
+    margin-bottom: 50px;
+    &:last-child {
+      border-right: none;
+    }
+    @media only screen and (max-width: 991px) {
+      border-right: none;
+    }
+    svg {
+      @media only screen and (max-width: 576px) {
+        width: 65px;
+        height: 69px;
+      }
+    }
+
+    .company-stats-title {
+      font-size: 48px;
+      font-family: $main_text;
+      color: $theme;
+      text-transform: capitalize;
+      font-weight: 900;
+      @media only screen and (max-width: 576px) {
+        font-size: 38px;
+      }
+    }
+
+    .company-stats-sub-title {
+      font-size: 20px;
+      font-family: $sub_text;
+      color: $light_grey;
+      @media only screen and (max-width: 576px) {
+        font-size: 18px;
+      }
+    }
+  }
+}

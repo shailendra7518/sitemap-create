@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="51.585" viewBox="0 0 56 51.585">
+  <g id="gitlab" transform="translate(-0.164 -0.42)">
+    <path id="Path_22215" data-name="Path 22215" d="M91.281,122.839,101.593,91.1H80.97l10.311,31.734Z" transform="translate(-63.117 -70.833)" fill="#e24329"/>
+    <path id="Path_22216" data-name="Path 22216" d="M39.718,122.838,29.407,91.1H14.956Z" transform="translate(-11.554 -70.833)" fill="#fc6d26"/>
+    <path id="Path_22217" data-name="Path 22217" d="M3.4,91.1.269,100.748a2.135,2.135,0,0,0,.775,2.387l27.12,19.7L3.4,91.1Z" transform="translate(0 -70.833)" fill="#fca326"/>
+    <path id="Path_22218" data-name="Path 22218" d="M14.956,20.272H29.407L23.2,1.158a1.067,1.067,0,0,0-2.03,0l-6.21,19.113Z" transform="translate(-11.554)" fill="#e24329"/>
+    <path id="Path_22219" data-name="Path 22219" d="M128.074,122.838,138.385,91.1h14.451l-24.762,31.734Z" transform="translate(-99.91 -70.833)" fill="#fc6d26"/>
+    <path id="Path_22220" data-name="Path 22220" d="M152.837,91.1l3.133,9.644a2.135,2.135,0,0,1-.776,2.387l-27.12,19.7L152.837,91.1Z" transform="translate(-99.911 -70.833)" fill="#fca326"/>
+    <path id="Path_22221" data-name="Path 22221" d="M189.63,20.272H175.179l6.21-19.113a1.067,1.067,0,0,1,2.03,0Z" transform="translate(-136.704 0)" fill="#e24329"/>
+  </g>
+</svg>

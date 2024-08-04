@@ -1,0 +1,222 @@
+.stack-cards .animated-card-banner {
+  display: grid;
+  grid-template-columns: 1fr 1fr; }
+  @media (max-width: 1000px) {
+    .stack-cards .animated-card-banner {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 1.5fr 1fr;
+      transform: scale(0.8);
+      left: 25%; } }
+
+.stack-cards .posts {
+  position: relative; }
+
+.stack-cards .post-clickable {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.stack-cards .card {
+  width: 280px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 3px 2px 10px -5px rgba(0, 0, 0, 0.51);
+  -webkit-box-shadow: 3px 2px 10px -5px rgba(0, 0, 0, 0.51);
+  -moz-box-shadow: 3px 2px 10px -5px rgba(0, 0, 0, 0.51);
+  background-color: transparent;
+  position: absolute; }
+
+.stack-cards .button {
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: transparent;
+  z-index: 9999;
+  opacity: 0; }
+  .stack-cards .button:focus {
+    outline: none; }
+  .stack-cards .button span {
+    flex: 1;
+    padding: 6px;
+    pointer-events: none;
+    color: #ff9999;
+    font-family: 'News Cycle';
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  @media only screen and (max-width: 576px) {
+    .stack-cards .button {
+      display: none; } }
+
+.stack-cards img {
+  display: block;
+  margin-bottom: 16px; }
+
+.contact-banner {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .contact-banner .contact-banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contact-banner .contact-banner-content .contact-title {
+      font-size: 48px;
+      font-family: "Montserrat", sans-serif;
+      color: #E4E8F0;
+      font-weight: 600; }
+      @media only screen and (max-width: 1024px) {
+        .contact-banner .contact-banner-content .contact-title {
+          margin-top: 30px;
+          font-size: 36px; } }
+      @media only screen and (max-width: 768px) {
+        .contact-banner .contact-banner-content .contact-title {
+          font-size: 32px; } }
+      @media only screen and (max-width: 576px) {
+        .contact-banner .contact-banner-content .contact-title {
+          font-size: 25px; } }
+    .contact-banner .contact-banner-content .contact-banner-details {
+      font-size: 20px;
+      font-family: "Poppins", sans-serif;
+      color: #707070;
+      line-height: 36px;
+      font-weight: 400; }
+      @media only screen and (max-width: 1024px) {
+        .contact-banner .contact-banner-content .contact-banner-details {
+          font-size: 18px;
+          line-height: 1.5; } }
+      @media only screen and (max-width: 768px) {
+        .contact-banner .contact-banner-content .contact-banner-details {
+          font-size: 18px;
+          line-height: 1.5; } }
+      @media only screen and (max-width: 576px) {
+        .contact-banner .contact-banner-content .contact-banner-details {
+          font-size: 16px;
+          line-height: 1.5; } }
+    .contact-banner .contact-banner-content .contact-reviews .clutch-widget iframe {
+      height: 80px !important;
+      padding-top: 0.9rem;
+      transform-origin: left;
+      transform: scale(1.6); }
+      @media only screen and (max-width: 991px) {
+        .contact-banner .contact-banner-content .contact-reviews .clutch-widget iframe {
+          transform: scale(1.4); } }
+    .contact-banner .contact-banner-content .contact-reviews .goodfirm-widget iframe {
+      transform-origin: left;
+      transform: scale(0.8); }
+  .contact-banner .animated-card-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr; }
+    @media only screen and (max-width: 1200px) {
+      .contact-banner .animated-card-banner .posts {
+        left: -65px; } }
+    @media (max-width: 1000px) {
+      .contact-banner .animated-card-banner {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1.5fr 1fr;
+        transform: scale(0.8);
+        left: 25%; } }
+  .contact-banner .animated-cards-contact {
+    margin-top: 12rem; }
+    @media only screen and (max-width: 576px) {
+      .contact-banner .animated-cards-contact {
+        margin-top: 14rem;
+        margin-left: 0.5rem; } }
+  @media only screen and (max-width: 1024px) {
+    .contact-banner {
+      margin-top: 4rem; } }
+  @media only screen and (max-width: 576px) {
+    .contact-banner {
+      margin-top: 0; } }
+
+.image-box::before {
+  content: "";
+  padding: 50% 50%;
+  top: -65%;
+  right: -20%;
+  position: absolute;
+  background-color: #002440;
+  z-index: -1; }
+
+.arrow-right-fill {
+  top: 36%;
+  right: 10px;
+  display: none;
+  transition: all 0.4s ease; }
+
+.contact-detail-box:hover .arrow-right-fill {
+  display: inline-block !important; }
+
+.contact-detail-box:hover .contact-detail-widget {
+  border-color: #1CBBDA;
+  transform: translateX(50px);
+  transition: transform 0.22s;
+  transition-timing-function: ease-in-out; }
+
+.contact-details .contact-widget-link {
+  left: 50%;
+  margin-top: -74px;
+  transform: translate(-50%, 0%);
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: #1CBBDA; }
+  @media only screen and (max-width: 576px) {
+    .contact-details .contact-widget-link {
+      font-size: 17px; }
+      .contact-details .contact-widget-link img {
+        height: 37px;
+        width: 33px; } }
+
+.contact-details .contact-detail-box .contact-detail-widget {
+  border: 2px solid #313131;
+  content: "";
+  padding: 45px 0;
+  transition: all 0.4s ease; }
+
+.contact-page-form {
+  padding: 3rem; }
+
+@media only screen and (max-width: 1200px) {
+  .contact-banner .animated-card-banner .posts {
+    left: -65px; }
+  .contact-page-form {
+    padding: 0;
+    margin-top: 0; } }
+
+@media only screen and (max-width: 1024px) {
+  .contact-banner {
+    margin-top: 4rem; }
+    .contact-banner .contact-title {
+      font-size: 36px !important; }
+    .contact-banner .contact-banner-details {
+      font-size: 18px !important;
+      line-height: 1.5 !important; }
+    .contact-banner .contact-widget-link {
+      left: 50%;
+      margin-top: -74px;
+      transform: translate(-50%, 0%);
+      font-size: 24px;
+      font-family: "Montserrat", sans-serif;
+      color: #1CBBDA; } }
+    @media only screen and (max-width: 1024px) and (max-width: 576px) {
+      .contact-banner .contact-widget-link {
+        font-size: 17px; }
+        .contact-banner .contact-widget-link img {
+          height: 37px;
+          width: 33px; } }

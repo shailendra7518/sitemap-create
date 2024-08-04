@@ -1,0 +1,278 @@
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(-360deg);
+    transform: rotate(-360deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.why-us {
+  padding: 2rem;
+
+  .why-us-heading {
+    img {
+      @media screen and (max-width: 576px) {
+        height: 84px;
+        width: 53px;
+      }
+    }
+  }
+
+  .vertical-timeline-element--work {
+    .vertical-timeline-element {
+      transform: rotateX(90deg);
+      opacity: 0;
+      transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+      &:active {
+        transform: rotateX(0deg);
+        opacity: 1;
+        .vertical-timeline-element-icon.bounce-in {
+          @media only screen and (max-width: 1170px) and (min-width: 1025px) {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .timeline-wrapper {
+    ul.timeline {
+      list-style-type: none;
+      @media (max-width: 768px) {
+        padding-left: 0;
+      }
+    }
+
+    .timeline-heading {
+      .timeline-title {
+        border-top: 2px solid $theme;
+        @media (max-width: 768px) {
+          border-top: none;
+        }
+        h2 {
+          border-bottom: 2px solid $theme;
+          @media (max-width: 768px) {
+            border-bottom: none;
+            padding-left: 0px;
+          }
+        }
+      }
+      .timeline-icon {
+        border: 2px solid $theme;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        margin-left: -10px;
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+      .timeline-title-right {
+        border-top: 2px solid $theme;
+        margin-left: -15px;
+        @media (max-width: 768px) {
+          border-top: none;
+        }
+        h2 {
+          border-bottom: 2px solid $theme;
+          @media (max-width: 768px) {
+            border-bottom: none;
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    margin-top: -38px;
+  }
+  .timeline_text {
+    font-size: 1.5rem;
+    color: $theme;
+    padding-left: 50px;
+    width: 17rem;
+  }
+  .content-timeline.vertical-timeline-element-date {
+    font-size: 1.2rem;
+    color: $light_grey;
+    font-family: $sub_text;
+    line-height: 30px;
+    margin-top: -3rem;
+    margin-left: 6rem;
+    @media screen and (min-width: 786px) and (max-width: 1170px) {
+      margin-top: 0;
+    }
+    @media screen and (max-width: 576px) {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      text-align: start;
+    }
+  }
+  .vertical-timeline--two-columns {
+    .vertical-timeline-element-content {
+      .vertical-timeline-element-date {
+        width: 75%;
+        padding: 0 1em 0 0;
+        @media (max-width: 768px) {
+          margin-left: 10px;
+          margin-top: -25px;
+          width: 100%;
+          padding: 0;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 785px) {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .vertical-timeline-element-icon {
+    box-shadow: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    border: 2px solid $theme;
+    text-align: center;
+    font: 18px Arial, sans-serif;
+    margin-left: -18px;
+    outline: 10px solid black;
+    @media (max-width: 1024px) {
+      left: 17px;
+    }
+    @media only screen and (max-width: 1170px) and (min-width: 1024px) {
+      margin-left: 0;
+    }
+    &.active {
+      box-shadow: none;
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      margin-left: -49px;
+      background-color: black;
+      border: 2px dashed $theme;
+      border-radius: 50%;
+      -webkit-animation-name: rotate;
+      animation-name: rotate;
+      -webkit-animation-duration: 5s;
+      animation-duration: 5s;
+      -webkit-animation-iteration-count: infinite;
+      animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      animation-timing-function: linear;
+      outline: 20px solid black;
+      &::after {
+        margin: 25px;
+        content: "";
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        -moz-border-radius: 7.5px;
+        -webkit-border-radius: 7.5px;
+        border-radius: 50%;
+        border: 1px solid $theme;
+        background-color: $black;
+      }
+      @media (max-width: 1024px) {
+        margin-left: -31px;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      width: 30px;
+      height: 30px;
+      left: 22px;
+    }
+  }
+  .vertical-timeline.vertical-timeline--two-columns {
+    &:before {
+      background-color: $theme;
+      width: 0.1rem;
+      height: 80%;
+      margin-top: 5rem;
+    }
+  }
+  .vertical-timeline-element {
+    margin: 9rem 0;
+    @media (max-width: 1024px) {
+      margin: 5rem 0;
+    }
+    &:last-child {
+      margin: 3rem 0; 
+    }
+  }
+  .timeline-number.vertical-timeline-element-icon.bounce-in {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 8px;
+    color: #ffffff;
+    background: rgb(0, 0, 0);
+    border: 2px solid $theme;
+    text-align: center;
+    font: 18px Arial, sans-serif;
+    margin-left: -18px;
+  }
+}
+
+.circle {
+  left: calc(50% - 50px);
+  top: 0;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px dashed $theme;
+  border-radius: 50%;
+  animation-name: rotate;
+  background-color: black;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  transition: top 0.3s ease-in-out;
+  &::after {
+    margin: 33px;
+    content: "";
+    background-color: black;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 50%;
+    border: 1px solid $theme;
+    background-color: $black;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.circle {
+  @media (max-width: 1170px) {
+    left: -33px;
+  }
+  @media (max-width: 576px) {
+    left: -21px;
+    margin-top: 7px;
+    width: 80px;
+    height: 80px;
+    &::after {
+      margin: 25.2px;
+      width: 25px;
+      height: 25px;
+    }
+  }
+}

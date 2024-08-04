@@ -1,0 +1,117 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap";
+@import "./helpers/colors";
+@import "./helpers/font";
+
+.survey-banner-sub-title {
+  font-size: 24px;
+  font-family: $sub_text;
+  color: $theme;
+  font-weight: 500;
+  cursor: pointer;
+}
+.project-survey-widget iframe {
+  height: 381px !important;
+}
+.project-survey-block {
+  .project-survey-block-title {
+    margin: 55px 0 20px 0;
+    h2 {
+      font-size: 36px;
+      font-family: $sub_text;
+      color: $theme;
+      font-weight: 500;
+    }
+    .pagination-box {
+      font-size: 32px;
+      color: $dark_grey;
+      align-items: center;
+      p {
+        margin: 0;
+      }
+      svg {
+        font-size: 38px;
+        cursor: pointer;
+      }
+      .page-number {
+        color: $theme;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      margin: 70px 0 20px;
+    }
+  }
+  .survey-icon-box {
+    .survey-icon-box-inner {
+      background-color: $dark_bg;
+      img {
+        @media only screen and (max-width: 576px) {
+          width: 50px;
+          height: 50px;
+        }
+      }
+      .survey-icon-name {
+        font-size: 24px;
+        font-family: $main_text;
+        font-weight: 400;
+        color: $theme;
+        @media only screen and (max-width: 576px) {
+          font-size: 16px;
+          margin: 0 4px;
+        }
+      }
+    }
+    .bottom-animated-line {
+      width: 100%;
+      border-top: 5px solid $theme;
+      transition: all 0.2s ease;
+    }
+    .animated-line {
+      width: 0%;
+      border-top: 5px solid $theme;
+      transition: width 0.4s ease;
+    }
+    &:hover {
+      .animated-line {
+        width: 100%;
+      }
+    }
+  }
+  .next-btn {
+    color: $theme;
+    font-size: 28px;
+    a {
+      color: $theme;
+    }
+  }
+  .survey-form-text {
+    h2 {
+      font-size: 48px;
+      color: $light;
+      @media (max-width: 1140px) {
+        font-size: 36px;
+      }
+    }
+    p {
+      font-size: 18px;
+      color: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: $theme;
+    }
+  }
+  .next-q-button {
+    button {
+      all: unset;
+      color: $theme;
+      font-size: 28px;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:disabled {
+        color: #1cbbda82;
+        transition: all 0.5s;
+      }
+    }
+  }
+}

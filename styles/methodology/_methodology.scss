@@ -1,0 +1,183 @@
+@import '../mixins/mixins';
+
+.main-banner {
+  .banner-sub-title {
+    color: $light_grey;
+    font-size: 24px;
+    font-family: $sub_text;
+    font-weight: 500;
+  }
+
+  @media only screen and (min-width: 991px) {
+    height: 90vh;
+  }
+}
+
+.mobile-app-services {
+  background-color: $dark_bg;
+}
+
+.content-card-icon {
+  img {
+    @media only screen and (max-width: 768px) {
+      width: 2rem;
+    }
+  }
+}
+
+.forefronts {
+  @media only screen and (min-width: 991px) {
+    margin-top: 90px;
+  }
+}
+
+.waterfall-method {
+  .process {
+    @include processContent;
+  }
+}
+
+.model-working {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  .tick-mark {
+    margin-top: 0.25rem;
+    width: 2rem;
+    @media only screen and (max-width: 991px) {
+      width: 1.5rem;
+    }
+    @media only screen and (max-width: 576px) {
+      margin-top: 0.45rem;
+      width: 1rem;
+    }
+  }
+}
+
+.dark-background {
+  background-color: $dark_bg;
+}
+
+.content-title {
+  font-size: 36px;
+  font-family: $sub_text;
+  color: $theme;
+  font-weight: 500;
+  line-height: 48px;
+  @media only screen and (max-width: 991px) {
+    font-size: 28px;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 22px;
+    line-height: 1.5;
+  }
+}
+
+.content-details {
+  font-size: 20px;
+  font-family: $sub_text;
+  color: #ababab;
+  font-weight: 300;
+  line-height: 36px;
+  text-justify: inter-word;
+  @media only screen and (max-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  @media (max-width: 786px) {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 12px;
+  }
+}
+
+.content-sub-title {
+  font-family: $sub_text;
+  font-size: 1.5rem;
+  color: $light_grey;
+  line-height: 30px;
+  font-weight: 300;
+  @media only screen and (max-width: 991px) {
+    font-size: 1.25rem;
+  }
+  @media only screen and (max-width: 576px) {
+    font-size: 1rem;
+  }
+}
+
+.detail-list {
+  @include details-list;
+  .list-number {
+    font-size: 20px;
+    color: $theme;
+    font-weight: 500;
+    border: 1px solid $theme;
+  }
+  .list-content {
+    top: -8px;
+  }
+  @media only screen and (min-width: 991px) {
+    width: 90%;
+  }
+}
+
+.white {
+  color: $light;
+}
+.text-theme {
+  color: $theme;
+}
+.light_grey {
+  color: $light_grey;
+}
+
+.main-banner-title {
+  font-size: 56px;
+  font-family: $main_text;
+  color: $light;
+  line-height: 70px;
+  font-weight: 500;
+  @media (max-width: 768px) {
+    font-size: 30px;
+    line-height: 43px;
+  }
+}
+
+.review-banner-image {
+  img {
+    @media (max-width: 768px) {
+      height: 500px;
+      object-fit: contain;
+    }
+  }
+}
+// method-wrapper
+.method-wrapper {
+  .method-block {
+    .method-title {
+      font-size: 24px;
+      font-family: $sub_text;
+      color: $theme;
+      border-bottom: 1px solid $theme;
+    }
+    .method-detail {
+      font-size: 18px;
+      font-family: $sub_text;
+      color: $light_grey;
+      border-bottom: 1px solid $theme;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 6%;
+        padding: 50px 0;
+        transform: translateY(-30%);
+        border-right: 2px dashed $dark_grey;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 12px;
+      }
+    }
+  }
+}

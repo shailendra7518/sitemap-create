@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="looping-process-icon-2" transform="translate(-2 -12)">
+    <g id="_5._Box_Check" data-name="5. Box Check" transform="translate(2 12)">
+      <path id="Path_15436" data-name="Path 15436" d="M10,1h9V8.7A1.3,1.3,0,0,1,17.7,10h-6.39A1.305,1.305,0,0,1,10,8.7Z" transform="translate(5 0.5)" fill="#1cbbda"/>
+      <path id="Path_15437" data-name="Path 15437" d="M16.5,39H4.5A4.5,4.5,0,0,1,0,34.5V4.5A4.5,4.5,0,0,1,4.5,0h30A4.5,4.5,0,0,1,39,4.5v12a1.5,1.5,0,0,1-3,0V4.5A1.5,1.5,0,0,0,34.5,3H4.5A1.5,1.5,0,0,0,3,4.5v30A1.5,1.5,0,0,0,4.5,36h12a1.5,1.5,0,0,1,0,3Z" fill="#1cbbda"/>
+      <path id="Path_15438" data-name="Path 15438" d="M8.5,23h-3a1.5,1.5,0,0,1,0-3h3a1.5,1.5,0,1,1,0,3Z" transform="translate(2 10)" fill="#1cbbda"/>
+      <path id="Path_15439" data-name="Path 15439" d="M27.5,41A13.5,13.5,0,1,1,41,27.5,13.5,13.5,0,0,1,27.5,41Zm0-24A10.5,10.5,0,1,0,38,27.5,10.5,10.5,0,0,0,27.5,17Z" transform="translate(7 7)" fill="#1cbbda"/>
+      <path id="Path_15440" data-name="Path 15440" d="M24.5,29a1.5,1.5,0,0,1-1.065-.435l-3-3a1.506,1.506,0,0,1,2.13-2.13l1.935,1.95,4.935-4.95a1.506,1.506,0,0,1,2.13,2.13l-6,6A1.5,1.5,0,0,1,24.5,29Z" transform="translate(9.998 9.998)" fill="#1cbbda"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,199 @@
+@import "./helpers/colors";
+@import "./helpers/font";
+@import "./stackCards/stack-cards";
+.contact-banner {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contact-banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .contact-title {
+      font-size: 48px;
+      font-family: $main_text;
+      color: $light;
+      font-weight: 600;
+      @media only screen and (max-width: 1024px) {
+        margin-top: 30px;
+        font-size: 36px;
+      }
+      @media only screen and (max-width: 768px) {
+        font-size: 32px;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 25px;
+      }
+    }
+    .contact-banner-details {
+      font-size: 20px;
+      font-family: $sub_text;
+      color: $dark_grey;
+      line-height: 36px;
+      font-weight: 400;
+      @media only screen and (max-width: 1024px) {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      @media only screen and (max-width: 768px) {
+        font-size: 18px;
+        line-height: 1.5;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+    }
+    .contact-reviews{
+      .clutch-widget{
+        iframe{
+          height: 80px !important;
+          padding-top: 0.9rem;
+          transform-origin: left;
+          transform: scale(1.6);
+          @media only screen and (max-width: 991px) {
+            transform: scale(1.4); 
+          } 
+        }
+      }
+      .goodfirm-widget{
+        iframe{
+        transform-origin: left;
+        transform: scale(0.8);
+        }
+      }
+    }
+  }
+  .animated-card-banner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .posts {
+      @media only screen and (max-width: 1200px) {
+        left: -65px;
+      }
+    }
+    @media (max-width: 1000px) {
+      display: grid;
+      grid-template-columns: none;
+      grid-template-rows: 1.5fr 1fr;
+      transform: scale(0.8);
+      left: 25%;
+    }
+  }
+
+  .animated-cards-contact {
+    margin-top: 12rem;
+    @media only screen and (max-width: 576px) {
+      margin-top: 14rem;
+      margin-left: 0.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    margin-top: 4rem;
+  }
+  @media only screen and (max-width: 576px) {
+    margin-top: 0;
+  }
+}
+
+// banner-right-image
+.image-box::before {
+  content: "";
+  padding: 50% 50%;
+  top: -65%;
+  right: -20%;
+  position: absolute;
+  background-color: $dark_blue;
+  z-index: -1;
+}
+
+.arrow-right-fill {
+  top: 36%;
+  right: 10px;
+  display: none;
+  transition: all 0.4s ease;
+}
+
+.contact-detail-box:hover .arrow-right-fill {
+  display: inline-block !important;
+}
+
+.contact-detail-box:hover .contact-detail-widget {
+  border-color: $theme;
+  transform: translateX(50px);
+  transition: transform 0.22s;
+  transition-timing-function: ease-in-out;
+}
+
+.contact-details {
+  .contact-widget-link {
+    left: 50%;
+    margin-top: -74px;
+    transform: translate(-50%, 0%);
+    font-size: 24px;
+    font-family: $main_text;
+    color: $theme;
+    @media only screen and (max-width: 576px) {
+      font-size: 17px;
+      img {
+        height: 37px;
+        width: 33px;
+      }
+    }
+  }
+  .contact-detail-box {
+    .contact-detail-widget {
+      border: 2px solid $image_bg;
+      content: "";
+      padding: 45px 0;
+      transition: all 0.4s ease;
+    }
+  }
+}
+.contact-page-form {
+  padding: 3rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-banner {
+    .animated-card-banner {
+      .posts {
+        left: -65px;
+      }
+    }
+  }
+  .contact-page-form {
+    padding: 0;
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact-banner {
+    margin-top: 4rem;
+    .contact-title {
+      font-size: 36px !important;
+    }
+    .contact-banner-details {
+      font-size: 18px !important;
+      line-height: 1.5 !important;
+    }
+    .contact-widget-link {
+      left: 50%;
+      margin-top: -74px;
+      transform: translate(-50%, 0%);
+      font-size: 24px;
+      font-family: $main_text;
+      color: $theme;
+      @media only screen and (max-width: 576px) {
+        font-size: 17px;
+        img {
+          height: 37px;
+          width: 33px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="check-bullets" transform="translate(-520 -6715)">
+    <path id="Icon_awesome-check" data-name="Icon awesome-check" d="M9.17,24.316.4,15.541a1.35,1.35,0,0,1,0-1.909L2.3,11.723a1.35,1.35,0,0,1,1.909,0l5.911,5.911L22.786,4.973a1.35,1.35,0,0,1,1.909,0L26.6,6.882a1.35,1.35,0,0,1,0,1.909L11.08,24.316A1.35,1.35,0,0,1,9.17,24.316Z" transform="translate(527 6720.423)" fill="#1cbbda"/>
+    <path id="Rectangle_11052" data-name="Rectangle 11052" d="M6,1A5.006,5.006,0,0,0,1,6V34a5.006,5.006,0,0,0,5,5H34a5.006,5.006,0,0,0,5-5V6a5.006,5.006,0,0,0-5-5H6M6,0H34a6,6,0,0,1,6,6V34a6,6,0,0,1-6,6H6a6,6,0,0,1-6-6V6A6,6,0,0,1,6,0Z" transform="translate(520 6715)" fill="#1cbbda"/>
+  </g>
+</svg>

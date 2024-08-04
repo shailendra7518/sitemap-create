@@ -1,0 +1,38 @@
+.who-we-are {
+  margin-top: 16rem;
+
+  .content-card {
+    padding-top: 100px;
+  }
+
+  @media only screen and (max-width: 991px) {
+    margin-top: 5rem;
+  }
+}
+
+.About-detail p {
+  font-size: 20px;
+  font-family: $sub_text;
+  font-weight: 400;
+  color: $dark_grey-4;
+  line-height: 30px;
+
+  @media only screen and (max-width: 1024px) {
+    padding-right: 0;
+  }
+
+  @media only screen and (max-width: 991px) {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+.About-detail h3 {
+  font-size: calc(1.325rem + 0.9vw);
+
+  @media only screen and (min-width: 1200px) {
+    font-size: 2rem;
+  }
+}
+
+// banner-right-image

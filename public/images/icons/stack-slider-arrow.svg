@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="right-arrow" transform="translate(-1604 -1546)">
+    <circle id="Ellipse_480" data-name="Ellipse 480" cx="28" cy="28" r="28" transform="translate(1604 1546)" fill="#18191b"/>
+    <path id="Ellipse_480_-_Outline" data-name="Ellipse 480 - Outline" d="M28,.5A27.507,27.507,0,0,0,17.3,53.339,27.507,27.507,0,0,0,38.7,2.661,27.327,27.327,0,0,0,28,.5M28,0A28,28,0,1,1,0,28,28,28,0,0,1,28,0Z" transform="translate(1604 1546)" fill="#333"/>
+    <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1613.479 1554.579)">
+      <path id="Path_17628" data-name="Path 17628" d="M18,25.293l-1.768-1.768,8.013-8.013L16.232,7.5,18,5.732l8.9,8.9a1.25,1.25,0,0,1,0,1.768Z" transform="translate(-3.479 3.921)" fill="#1cbbda"/>
+    </g>
+  </g>
+</svg>

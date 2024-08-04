@@ -1,0 +1,16 @@
+.client-review-process {
+  background-color: $dark_bg;
+  @media only screen and (min-width: 991px) {
+    margin-top: 90px;
+  }
+}
+.review-process {
+  margin: 90px 0;
+}
+
+.collaboration,
+.echo-meetings {
+  @media only screen and (min-width: 991px) {
+    margin-top: 90px;
+  }
+}

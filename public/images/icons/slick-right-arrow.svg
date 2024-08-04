@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="150" viewBox="0 0 150 150">
+  <defs>
+    <filter id="Ellipse_480" x="0" y="0" width="150" height="150" filterUnits="userSpaceOnUse">
+      <feOffset dx="1" dy="-1" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feFlood flood-color="#0d0d0d" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="Path_17628" x="57.921" y="47.208" width="34.327" height="56.653" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="1" input="SourceAlpha"/>
+      <feGaussianBlur result="blur-2"/>
+      <feFlood/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="right-arrow" transform="translate(-1604 -1546)">
+    <g data-type="innerShadowGroup">
+      <circle id="Ellipse_480-2" data-name="Ellipse 480" cx="75" cy="75" r="75" transform="translate(1604 1546)" fill="#18191b"/>
+      <g transform="matrix(1, 0, 0, 1, 1604, 1546)" filter="url(#Ellipse_480)">
+        <circle id="Ellipse_480-3" data-name="Ellipse 480" cx="75" cy="75" r="75" fill="#fff"/>
+      </g>
+      <g id="Ellipse_480-4" data-name="Ellipse 480" transform="translate(1604 1546)" fill="none" stroke="#333" stroke-width="0.5">
+        <circle cx="75" cy="75" r="75" stroke="none"/>
+        <circle cx="75" cy="75" r="74.75" fill="none"/>
+      </g>
+    </g>
+    <g id="Icon_feather-arrow-right" data-name="Icon feather-arrow-right" transform="translate(1668.285 1599.571)">
+      <g transform="matrix(1, 0, 0, 1, -64.29, -53.57)" filter="url(#Path_17628)">
+        <path id="Path_17628-2" data-name="Path 17628" d="M18,7.5,39.463,28.963,18,50.425" transform="translate(46.29 46.07)" fill="none" stroke="#1cbbda" stroke-linecap="square" stroke-linejoin="round" stroke-width="9"/>
+      </g>
+    </g>
+  </g>
+</svg>

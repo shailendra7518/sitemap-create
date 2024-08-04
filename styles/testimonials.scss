@@ -1,0 +1,41 @@
+@import "./helpers/colors";
+@import "./helpers/font";
+
+.rating-content {
+  .rating-stars {
+    span {
+      font-size: 24px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.5s;
+      margin: 4px;
+      color: $highlight;
+    }
+    .rating {
+      color: $theme;
+      font-size: 28px;
+      font-family: $main_text;
+    }
+  }
+  .review-card {
+    .block-name {
+      font-size: 22px;
+    }
+    .block-sub-title {
+      font-size: 1rem;
+    }
+    .client-review {
+      font-size: 1rem;
+      font-family: $sub_text;
+      color: $light_grey;
+      font-weight: 400;
+      line-height: 2rem;
+    }
+  }
+  .powered-by {
+    font-size: 20px;
+    color: $dark_grey;
+    font-family: $sub_text;
+    font-weight: 400;
+  }
+}

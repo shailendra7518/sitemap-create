@@ -1,3 +1,8 @@
-# Node.js
 node_modules
-package-lock.json
+
+/.cache
+/build
+/public/build
+.env
+/api/_build
+.vercel

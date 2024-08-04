@@ -1,0 +1,188 @@
+.hero-section {
+  padding: 4rem 0 0;
+
+  .banner-image {
+    margin-left: -210px;
+    background-image: radial-gradient(circle, $bg_effect, transparent);
+    opacity: 0;
+    transform: scale(0.4);
+
+    .hero-image-svg {
+      @media only screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+
+    img {
+      width: 130%;
+      @media only screen and (max-width: 991px) {
+        width: 120%;
+      }
+    }
+    .squares {
+      z-index: -2;
+      content: "";
+      position: absolute;
+      top: 5%;
+      left: 30%;
+      border: 1px solid $theme;
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+    @media only screen and (max-width: 1024px) {
+      margin-left: -130px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-left: 0;
+    }
+  }
+  .banner-text {
+    .squares {
+      z-index: -2;
+      content: "";
+      position: absolute;
+      top: 15%;
+      right: 4%;
+      border: 1px solid $theme;
+      -webkit-transform: rotate(-10deg);
+      transform: rotate(-10deg);
+    }
+    .squares-second {
+      z-index: -2;
+      content: "";
+      position: absolute;
+      top: 60%;
+      right: 25%;
+      background-color: $square_bg;
+      -webkit-transform: rotate(45deg);
+      transform: rotate(45deg);
+      @media only screen and (max-width: 1024px) {
+        z-index: -2;
+        top: 90%;
+        right: 15%;
+      }
+    }
+    .hero-title {
+      font-family: $main_text;
+      color: $light;
+      font-size: 46px;
+      line-height: 68px;
+      animation: an 1s ease-out 1 both;
+      display: inline-block;
+      animation-delay: 1s;
+
+      span {
+        color: $theme;
+      }
+    }
+    .hero-description {
+      opacity: 1;
+      font-family: "Poppins", sans-serif;
+      color: #ababab;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    h1 {
+      font-family: $main_text;
+      color: $light;
+      font-size: 46px;
+      line-height: 64px;
+      position: relative;
+      @media only screen and (max-width: 768px) {
+        font-size: 30px;
+        line-height: 45px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1600px) {
+        font-size: 33px;
+        line-height: 40px;
+      }
+    }
+    h4 {
+      font-family: $sub_text;
+      color: #ababab;
+      font-size: 20px;
+      line-height: 30px;
+      @media only screen and (max-width: 768px) {
+        margin-top: 2rem;
+        font-size: 18px;
+        line-height: 26px;
+      }
+      @media only screen and (min-width: 768px) and (max-width: 1600px) {
+        margin-top: 2rem;
+        font-size: 17px;
+        line-height: 24px;
+      }
+    }
+    @media only screen and (max-width: 991px) {
+      top: 100%;
+    }
+  }
+}
+.squares {
+  z-index: -2;
+  padding: 250px 0 0 0;
+  div {
+    width: 250px;
+    height: 250px;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .banner-image {
+    margin-left: -130px !important;
+  }
+  .squares-second {
+    z-index: -2;
+    top: 90% !important;
+    right: 15% !important;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .banner-text {
+    top: 100% !important;
+  }
+  .banner-image {
+    img {
+      width: 120% !important;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .banner-image {
+    margin-left: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .banner-text {
+    h1 {
+      font-size: 30px !important;
+      line-height: 45px !important;
+    }
+    h4 {
+      margin-top: 2rem !important;
+      font-size: 18px !important;
+      line-height: 26px !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1600px) {
+  .banner-text {
+    h1 {
+      font-size: 33px !important;
+      line-height: 40px !important;
+    }
+    h4 {
+      margin-top: 2rem !important;
+      font-size: 17px !important;
+      line-height: 24px !important;
+    }
+  }
+}
+
+.profile-badge {
+  max-width: 120px;
+  max-height: 120px;
+}

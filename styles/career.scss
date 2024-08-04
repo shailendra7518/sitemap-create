@@ -1,0 +1,456 @@
+@import "./helpers/colors";
+@import "./helpers/font";
+@import "./mixins/mixins";
+
+.job-details-main-container {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  .container {
+    max-width: 900px;
+    margin-top: 0;
+    @media only screen and (max-width: 900px) {
+      margin: 0 30px;
+    }
+  }
+  h2 {
+    color: $theme;
+    font-size: 1.25rem;
+  }
+  .inner-big-side {
+    p,
+    li {
+      font-size: 15px;
+    }
+
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .inner-small-side {
+    li {
+      font-size: 15px;
+    }
+    @media only screen and (max-width: 767px) {
+      width: 100%;
+    }
+  }
+
+  .job-info-title-content {
+    width: fit-content;
+
+    .job-title-image {
+      max-width: 50px;
+      @media only screen and (max-width: 720px) {
+        max-width: 40px;
+      }
+    }
+
+    .job-info-title-sub-content {
+      .job-info-title-sub-main-content {
+        gap: 4px;
+        align-items: center;
+        @media only screen and (max-width: 337px) {
+          font-size: smaller;
+        }
+        @media only screen and (max-width: 287px) {
+          font-size: 10px;
+        }
+      }
+
+      @media only screen and (max-width: 576px) {
+        width: 100%;
+        margin: auto;
+        font-size: small;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      width: 100%;
+    }
+  }
+
+  .job-info-container {
+    margin-top: 40px;
+    display: block;
+
+    @media only screen and (max-width: 972px) {
+      h2 {
+        font-size: large;
+      }
+      p,
+      ul {
+        font-size: 15px;
+      }
+    }
+
+    @media only screen and (max-width: 576px) {
+      h2 {
+        font-size: 17px;
+      }
+      p,
+      ul {
+        font-size: 13px;
+      }
+    }
+  }
+
+  .job-info-application-container {
+    @media only screen and (max-width: 576px) {
+      gap: 0px;
+      flex-direction: column;
+      p,
+      ul {
+        font-size: 15px;
+      }
+    }
+    @media only screen and (max-width: 427px) {
+      p,
+      ul {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+.blog__title {
+  @media only screen and (max-width: 376px) {
+    text-align: center;
+  }
+}
+
+.opening-job-position {
+  margin-top: 180px;
+  .hiring-content {
+    .hiring-title {
+      font-size: 56px;
+      font-family: $main_text;
+      color: $light;
+      font-weight: 500;
+      @media only screen and (max-width: 576px) {
+        font-size: 45px;
+      }
+    }
+    .hiring-details {
+      font-size: 24px;
+      font-family: $sub_text;
+      color: $light_grey;
+      font-weight: 400;
+      @media only screen and (max-width: 992px) {
+        font-size: 20px;
+      }
+      @media only screen and (max-width: 576px) {
+        font-size: 18px;
+      }
+    }
+  }
+  .col-5 {
+    background-color: $dark_bg;
+  }
+  .hiring-card {
+    .position-opening {
+      .job-position-title {
+        font-size: 24px;
+        font-family: $main_text;
+        color: $theme;
+        font-weight: 500;
+        @media only screen and (max-width: 1200px) {
+          font-size: 20px;
+        }
+        @media only screen and (max-width: 576px) {
+          font-size: 18px;
+        }
+      }
+      .job-position-details {
+        font-size: 20px;
+        font-family: $sub_text;
+        color: $dark_grey-4;
+        font-weight: 400;
+        @media only screen and (max-width: 1200px) {
+          font-size: 16px;
+        }
+      }
+      .job-positions {
+        font-size: 20px;
+        font-family: $main_text;
+        color: $theme;
+        font-weight: 600;
+        margin: auto;
+        text-align: center;
+        @media only screen and (max-width: 1200px) {
+          font-size: 18px;
+        }
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      width: 280px;
+    }
+  }
+}
+.why-us-title {
+  font-family: $main_text;
+  font-size: 26px;
+  color: $theme;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 36px;
+  padding: 36px;
+  a {
+    color: $theme;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .job-position-title {
+    font-size: 20px !important;
+  }
+  .job-position-details {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .job-position-title {
+    font-size: 19px !important;
+  }
+}
+
+.perks-of-joining {
+  margin-top: 120px;
+  .joining-heading {
+    margin-bottom: 130px;
+    @media only screen and (max-width: 576px) {
+      margin-bottom: 90px;
+    }
+  }
+  @media only screen and (max-width: 576px) {
+    margin-top: 50px;
+  }
+  .perks-of-joining-one {
+    .perks {
+      padding: 46px 40px;
+
+      .perks-inner {
+        .perks-icon {
+          img {
+            @media only screen and (max-width: 576px) {
+              width: 45px;
+              height: 45px;
+            }
+          }
+
+          .perks-title {
+            font-family: $main_text;
+            font-size: 24px;
+            color: $theme;
+            text-transform: capitalize;
+            font-weight: 500;
+            line-height: 32px;
+            padding: 36px;
+            @media only screen and (max-width: 576px) {
+              font-size: 16px;
+              line-height: 1.5;
+            }
+          }
+        }
+      }
+
+      &:nth-child(1) {
+        background-image: url("/images/joining-bg-card-1.png");
+        transform: rotate(28deg);
+        .perks-inner {
+          transform: rotate(-15deg);
+        }
+        @include perks-bgimage;
+      }
+
+      &:nth-child(2) {
+        background-image: url("/images/joining-bg-card-2.png");
+        transform: rotate(8deg);
+        .perks-inner {
+          transform: rotate(12deg);
+        }
+        @include perks-bgimage;
+      }
+
+      &:nth-child(3) {
+        background-image: url("/images/joining-bg-card-1.png");
+        transform: rotate(28deg);
+        .perks-inner {
+          transform: rotate(-15deg);
+        }
+        @include perks-bgimage;
+      }
+
+      &:nth-child(4) {
+        background-image: url("/images/joining-bg-card-2.png");
+        transform: rotate(8deg);
+        .perks-inner {
+          transform: rotate(12deg);
+        }
+        @include perks-bgimage;
+      }
+
+      &:nth-child(5) {
+        background-image: url("/images/joining-bg-card-1.png");
+        transform: rotate(28deg);
+        .perks-inner {
+          transform: rotate(-15deg);
+        }
+        @include perks-bgimage;
+      }
+
+      @media only screen and (max-width: 576px) {
+        padding: 40px 36px;
+      }
+    }
+    .perk-image {
+      transform: scale(0.8);
+    }
+
+    gap: 50px 220px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+.our-team {
+  margin-top: 60px;
+  .team-head {
+    margin-top: 120px;
+    .team-head-name {
+      font-size: 28px;
+      font-family: $main_text;
+      color: $theme;
+      font-weight: 500;
+      @media only screen and (max-width: 576px) {
+        font-size: 24px;
+      }
+    }
+    .team-head-position {
+      font-size: 20px;
+      font-family: $sub_text;
+      color: $dark_grey;
+      font-weight: 400;
+      @media only screen and (max-width: 576px) {
+        font-size: 16px;
+      }
+    }
+
+    .team-head-image {
+      img {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        object-fit: cover;
+        @media only screen and (max-width: 768px) {
+          width: 250px;
+          height: 250px;
+        }
+        @media only screen and (max-width: 576px) {
+          width: 155px;
+          height: 155px;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        background-color: $image_bg;
+        opacity: 0.5;
+        padding: 50%;
+        z-index: -1;
+        border-radius: 5%;
+        top: -28px;
+        left: 23px;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: $image_bg;
+        opacity: 0.5;
+        padding: 64px;
+        top: -20px;
+        left: 38%;
+      }
+    }
+  }
+  .team-member-title {
+    margin-top: 60px;
+    font-size: 28px;
+    font-family: $sub_text;
+    color: $dark_grey;
+    font-weight: 500;
+  }
+  .slider-container {
+    margin: 0 20px;
+    .team-slider {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0 1.5rem;
+    }
+  }
+  .slick-slider {
+    margin-top: 7rem;
+    @media (max-width: 992px) {
+      margin-top: 6rem;
+    }
+    @media (max-width: 576px) {
+      margin-top: 4rem;
+    }
+    .slick-track {
+      .slick-slide {
+        transition: all 0.5s;
+        filter: brightness(0.5);
+        position: relative;
+        .member-details {
+          display: inline-block;
+          width: 100%;
+          height: min-content;
+          min-height: 100%;
+          background-color: $dark_bg;
+          padding: 30px 20px;
+          .team-member-name {
+            font-size: 20px;
+            font-family: $main_text;
+            color: $theme;
+            font-weight: 500;
+            line-height: 20px;
+          }
+          .team-member-position {
+            font-size: 12px;
+            font-family: $sub_text;
+            color: $light_grey;
+            font-weight: 300;
+            line-height: 10px;
+          }
+          .team-member-details {
+            font-size: 13px;
+            font-family: $sub_text;
+            color: $dark_grey;
+            font-weight: 400;
+            line-height: 20px;
+          }
+        }
+        .member-img {
+          border-radius: 50%;
+          z-index: 1;
+          width: 100%;
+          height: 120px;
+          max-width: 120px;
+          object-fit: fill;
+          margin-bottom: -60px;
+        }
+      }
+      .slick-slide.slick-current {
+        transition: all 0.5s;
+        filter: brightness(1);
+        transition: all 0.5s;
+        .member-img {
+          transition: all 0.5;
+          border: 5px solid $theme;
+        }
+      }
+    }
+  }
+}

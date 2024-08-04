@@ -1,0 +1,648 @@
+.clutch-container {
+  color: white;
+  display: flex;
+  flex-basis: 50%;
+  padding-top: 6.5rem;
+  padding-bottom: 3rem;
+
+  .hero-button {
+    margin-top: 8px;
+  }
+}
+
+.clutch-highlight {
+  color: #1cbbda;
+}
+
+.clutch-contact-form-container {
+  padding-left: 3rem;
+
+  .clutch-contact-form {
+    .form-control-label {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+
+  .clutch-form-message {
+    height: auto !important;
+    font-size: 18px;
+  }
+}
+
+.clutch-contact-form {
+  height: 100%;
+  border-radius: 5px;
+  padding: 0px 56px;
+  padding-bottom: 20px;
+  justify-content: center;
+  border: 1px solid #1cbbda;
+  background-color: #0d0d0d;
+}
+
+.clutch-contact-form-btn {
+  padding: 12px 0px !important;
+}
+
+.clutch-hero-title {
+  text-align: start;
+  font-size: 60px;
+  font-weight: 600 !important;
+  font-family: Montserrat;
+}
+
+.clutch-hero-title-divider {
+  display: block;
+}
+
+.clutch-hero-description {
+  font-size: 34px;
+  margin-bottom: 0px !important;
+  font-family: Poppins;
+  font-weight: 400;
+}
+
+.clutch-badges-img {
+  height: 148px;
+}
+
+@media (max-width: 1400px) {
+  .clutch-contact-form-container {
+    padding-left: 1rem;
+  }
+
+  .clutch-badges-img {
+    height: 135px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .clutch-container {
+    // flex-direction: column;
+    padding-top: 6rem;
+  }
+
+  .clutch-contact-form-container {
+    .gap-5 {
+      gap: 2.5rem !important;
+    }
+
+    .clutch-contact-form {
+      padding: 30px;
+
+      .mt-5 {
+        margin-top: 2.5rem !important;
+      }
+    }
+  }
+
+  .clutch-badges-img {
+    height: 110px;
+  }
+
+  .clutch-hero-description {
+    font-size: 24px;
+  }
+
+  .clutch-hero-title {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 991px) {
+  .clutch-container {
+    flex-direction: column;
+    padding-top: 6rem;
+    gap: 60px;
+  }
+
+  .clutch-hero-title-divider {
+    display: none;
+  }
+
+  .clutch-hero-description {
+    font-size: 24px;
+  }
+
+  .clutch-hero-title {
+    font-size: 50px;
+  }
+
+  .clutch-badges-img {
+    height: 148px;
+  }
+
+  .clutch-contact-form-container {
+    padding-left: 0rem;
+
+    .gap-5 {
+      gap: 3rem !important;
+    }
+
+    .clutch-contact-form {
+      padding: 36px 56px 56px 56px;
+
+      .mt-5 {
+        margin-top: 3rem !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .clutch-container {
+    padding-top: 5rem;
+  }
+
+  .clutch-hero-description {
+    font-size: 24px;
+  }
+
+  .clutch-hero-title {
+    font-size: 40px;
+  }
+
+  .clutch-contact-form {
+    padding: 30px !important;
+  }
+
+  .clutch-badges-img {
+    height: 90px;
+  }
+}
+
+@media (max-width: 420px) {
+  .clutch-container {
+    padding-top: 4rem;
+  }
+
+  .clutch-badges-img {
+    height: 75px;
+  }
+}
+
+// clutch review section
+
+.clutch-review-container {
+  display: grid;
+  grid-template-columns: 28% 40% 28%;
+  gap: 30px;
+  margin-top: 100px;
+
+  .clutch-review-container-1 {
+    grid-row: 1/3;
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+
+    .clutch-review-img-container-1 {
+      img {
+        width: 95%;
+      }
+    }
+
+    .clutch-review-img-container-2 {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+        width: 82%;
+      }
+    }
+
+    img {
+      padding: 16px;
+      border: 1.5px solid;
+      border-image: linear-gradient(to top, #00d5ff, #0072cb) 1;
+    }
+
+    @media (max-width: 1024px) {
+      img {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      img {
+        padding: 6px;
+        border-radius: 14px;
+      }
+    }
+  }
+
+  .clutch-reviews-widget {
+    grid-column: 2/4;
+    display: flex;
+    justify-content: center;
+
+    .clutch-widget {
+      padding: 40px 0 0 0;
+
+      iframe {
+        transform-origin: left;
+        transform: scale(1.8);
+      }
+
+      @media (max-width: 1200px) {
+        iframe {
+          transform: scale(1.4);
+        }
+      }
+
+      @media (max-width: 767px) {
+        iframe {
+          transform: scale(1);
+        }
+      }
+
+      @media (max-width: 425px) {
+        iframe {
+          transform-origin: right;
+          transform: scale(0.8);
+        }
+      }
+
+      @media (max-width: 320px) {
+        iframe {
+          transform: scale(0.6);
+        }
+      }
+    }
+
+    @media (max-width: 991px) {
+      .clutch-widget {
+        padding: 40px 0 0 0;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .clutch-widget {
+        max-width: 57%;
+        padding: 24px 0 0 0;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .clutch-widget {
+        max-width: 62%;
+        padding: 14px 0 0 0;
+      }
+    }
+
+    @media (max-width: 475px) {
+      .clutch-widget {
+        max-width: 68%;
+      }
+    }
+
+    @media (max-width: 425px) {
+      .clutch-widget {
+        max-width: 79%;
+        padding: 5px 0 0 0;
+      }
+    }
+
+    @media (max-width: 355px) {
+      .clutch-widget {
+        max-width: 88%;
+      }
+    }
+
+    @media (max-width: 320px) {
+      .clutch-widget {
+        max-width: 100%;
+      }
+    }
+  }
+
+  .clutch-review-container-2 {
+    padding-top: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+    img {
+      width: 100%;
+      height: 85%;
+    }
+  }
+
+  .clutch-review-container-3 {
+    display: flex;
+    align-items: start;
+
+    img {
+      padding: 16px;
+      width: 100%;
+      border: 1.5px solid;
+      border-image: linear-gradient(to top, #00d5ff, #0072cb) 1;
+    }
+
+    @media (max-width: 1024px) {
+      img {
+        padding: 10px;
+      }
+    }
+
+    @media (max-width: 991px) {
+      align-items: end;
+    }
+
+    @media (max-width: 767px) {
+      img {
+        padding: 6px;
+        border-radius: 14px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    .clutch-review-container-2 {
+      padding-top: 0px;
+    }
+
+    .clutch-badges-img {
+      align-items: end;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .clutch-review-container {
+    gap: 20px;
+
+    .clutch-review-container-1 {
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .clutch-review-container {
+    gap: 15px;
+
+    .clutch-review-container-1 {
+      gap: 15px;
+    }
+    .clutch-reviews-widget {
+      justify-content: end;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .clutch-review-container {
+    gap: 10px;
+
+    .clutch-review-container-1 {
+      gap: 10px;
+    }
+  }
+}
+
+// reviews-clutch-widget
+.reviews-clutch-widget {
+  margin-bottom: 100px;
+
+  .clutch-widget {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    iframe {
+      width: 100%;
+      height: auto;
+      margin-top: 100px;
+    }
+
+    @media (max-width: 600px) {
+      iframe {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .reviews-clutch-widget {
+    margin-bottom: 60px;
+  }
+}
+
+// Tailored Technology Roadmap
+
+.tailored-technology-roadmap-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  gap: 50px;
+
+  .tailored-technology-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #fbfbfb;
+    font-family: Montserrat;
+    margin-bottom: 56px;
+
+    .tailored-technology-title-highlight {
+      color: #1cbbda;
+    }
+  }
+
+  .tailored-technology-content {
+    color: #ababab;
+    font-size: 24px;
+    font-weight: 400;
+    font-family: Poppins;
+  }
+
+  .tailored-technology-transformative-journey {
+    color: #fbfbfb;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: Poppins;
+  }
+
+  @media (max-width: 1024px) {
+    .tailored-technology-title {
+      font-size: 44px;
+    }
+
+    .tailored-technology-content {
+      font-size: 22px;
+    }
+
+    .tailored-technology-transformative-journey {
+      font-size: 26px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .tailored-technology-title {
+      font-size: 40px;
+      margin-bottom: 46px;
+    }
+
+    .tailored-technology-content {
+      font-size: 20px;
+    }
+
+    .tailored-technology-transformative-journey {
+      font-size: 24px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .tailored-technology-title {
+      font-size: 32px;
+      margin-bottom: 36px;
+    }
+
+    .tailored-technology-content {
+      font-size: 16px;
+    }
+
+    .tailored-technology-transformative-journey {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .tailored-technology-roadmap-container {
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .tailored-technology-roadmap-container {
+    margin-top: 60px;
+  }
+}
+
+// clutch projects
+.clutch-project-container {
+  margin-top: 100px;
+  margin-bottom: 68px;
+
+  .project-slider .slick-slider .slick-slide .projects,
+  .project-slider .slick-slider .slick-slide .project-card-box {
+    height: 450px !important;
+  }
+
+  .project-heading {
+    padding-bottom: 78px !important;
+    padding-top: 0px !important;
+
+    h2 {
+      font-weight: 600 !important;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .project-heading {
+      padding-bottom: 65px !important;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-heading {
+      padding-bottom: 45px !important;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .project-heading {
+      padding-bottom: 25px !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .clutch-project-container {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+
+// clutch-service-container
+.clutch-service-container {
+  .services-section {
+    .heading {
+      h2 {
+        font-weight: 600;
+      }
+
+      @media (max-width: 768px) {
+        h2 {
+          font-size: 38px;
+        }
+      }
+
+      @media (max-width: 425px) {
+        h2 {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+// Top development clutch badges
+.top-development-clutch-badges {
+  display: flex;
+  margin-top: 80px;
+  padding: 22px 0px;
+  align-items: center;
+  gap: 7rem !important;
+  justify-content: center;
+  background-color: #0d0d0d;
+}
+
+@media (max-width: 1023px) {
+  .top-development-clutch-badges {
+    gap: 0rem !important;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 600px) {
+  .top-development-clutch-badges {
+    margin-top: 50px;
+  }
+}
+
+// clutch Footer Contact Form
+.clutch-footer-contact-form .contact-form-section {
+  margin-top: 100px;
+}
+
+@media (max-width: 600px) {
+  .clutch-footer-contact-form .contact-form-section {
+    margin-top: 60px;
+  }
+}
+
+//clutch-estimation-banner-container
+.clutch-estimation-banner-container {
+  .project-survey {
+    .clutch-widget {
+      margin-top: 10px;
+    }
+
+    .project-survey-details {
+      margin-bottom: 1rem !important;
+    }
+
+    @media (max-width: 991px) {
+      .project-survey-details {
+        margin-bottom: 1.5rem !important;
+      }
+    }
+  }
+}
