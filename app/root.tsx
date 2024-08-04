@@ -22,6 +22,7 @@ import { config, sanityClient } from "~/sanity/client";
 import globalCSS from "../app/styles/global.css";
 import Layout from "./layout/Layout";
 import { contactSubmission } from "./utils/contactSubmission";
+import { startSitemapScript } from "script";
 
 export async function action({ request }: any) {
   await contactSubmission(request);
@@ -90,6 +91,11 @@ export default function App() {
   useEffect(() => {
     TagManager.initialize(tagManagerArgs);
   }, []);
+
+  useEffect(() => {
+    startSitemapScript();
+    
+  },[])
 
   const data = useLoaderData();
   const location = useLocation();

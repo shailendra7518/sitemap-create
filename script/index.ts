@@ -134,7 +134,7 @@ const pushToGithub = async () => {
   }
 };
 
-;(async () => {
+export const startSitemapScript =async () => {
   try {
     const sitemapContent = await generateSitemapContent()
     const filePath = path.join(process.cwd(), 'public', 'sitemap.xml')
@@ -147,4 +147,7 @@ const pushToGithub = async () => {
   } catch (error) {
     console.error('Error:', error)
   }
-})()
+}
+
+
+startSitemapScript()
