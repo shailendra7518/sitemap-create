@@ -116,24 +116,16 @@ const pushToGithub = async () => {
       await git.init();
       await git.addRemote('origin', repositoryUrl);
     }
-
-    console.log('Fetching latest changes from remote...');
     await git.fetch('origin', 'main');
 
-    console.log('Adding changes to the staging area...');
     await git.add('.');
 
-    console.log('Committing changes...');
     await git.commit('Update sitemap.xml');
 
-    console.log('Checking out main branch...');
     await git.checkout('main');
 
-    console.log('Merging latest changes from origin/main...');
     await git.pull('origin', 'main');
 
- 
-    console.log('Pushing changes to the remote repository...');
     await git.push('origin', 'main');
 
     console.log('Changes pushed to the repository successfully.');
